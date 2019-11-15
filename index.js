@@ -10,7 +10,7 @@ const
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
 
 app.post('/webhook', (req, res) => {  
-
+  console.log('we made it here');
   let body = req.body;
 
   if (body.object === 'page') {
